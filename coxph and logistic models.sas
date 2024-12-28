@@ -1,5 +1,5 @@
-proc import file="/home/u58303998/P_cancer/fulldat.csv"
-    out=fulldat dbms=csv replace; /*No missing value in fulldat; */
+proc import file="/.../data.csv"
+    out=fulldat dbms=csv replace; /*No missing value in data; */
     getnames=yes;
 run;
 
