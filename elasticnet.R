@@ -7,7 +7,7 @@ library("survival")
 library(dplyr)
 
 
-dat<-read.csv("C:/Users/apust/OneDrive - University of Nebraska Medical Center/Desktop/Pancreatic cancer/logpc_new.csv", header=TRUE)
+dat<-read.csv("C:/Users/.../data.csv", header=TRUE)
 dat2<-as.data.frame(na.omit(dat)) #129 observations
 
 #many_na=(colMeans(is.na(dat2)))*100
@@ -176,7 +176,7 @@ scale_fill_gradient2(low = "royalblue",mid="snow3",high = "red", guide = "colorb
 
 ###########Stability selection####################################
 library(stabs)
-dat<-read.csv("C:/Users/apust/OneDrive - University of Nebraska Medical Center/Desktop/Pancreatic cancer/fulldat1.csv", header=TRUE)
+dat<-read.csv("C:/Users/../data.csv", header=TRUE)
 
 biomarkers<-dat[,c(24,47:77)]
 
@@ -214,9 +214,3 @@ bothdat=cbind(biomarkers, clindat)
 
 stab.rconcave.both=stabsel(x=bothdat, y=dat$oasyrs_cat,fitfun=glmnet.lasso, cutoff=0.55, PFER = 3, sampling.type = "SS", assumption="r-concave")
 stab.rconcave.both
-
-
-###########################################################
-library(haven)
-data=read_sas("C:/Users/apust/OneDrive - University of Nebraska Medical Center/Desktop/Pancreatic cancer/panc_biomarker_new.sas7bdat")
-data2=as.data.frame(na.omit(data))
