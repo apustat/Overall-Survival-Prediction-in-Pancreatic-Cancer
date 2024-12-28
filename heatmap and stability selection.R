@@ -1,4 +1,4 @@
-dat<-read.csv("C:/Users/apust/OneDrive - University of Nebraska Medical Center/Desktop/Pancreatic cancer/fulldat.csv", header=TRUE)
+dat<-read.csv("C:/Users/.../data.csv", header=TRUE)
 dat2<-as.data.frame(na.omit(dat))
 biomarkers<-dat2[,47:77]
 
