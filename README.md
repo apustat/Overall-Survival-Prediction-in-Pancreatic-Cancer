@@ -1,3 +1,5 @@
+***More details will be uploaded once the manuscript is accepted for publication***
+
 METHODS 
 
 Data source: This study used the data collected as part of the Prostate, Lung, Colorectal, and Ovarian (PLCO) trial, a randomized multicenter trial conducted in the United States, 
